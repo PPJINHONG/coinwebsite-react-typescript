@@ -44,6 +44,14 @@ function Chart () {
                 stacked: false,
                  background: "transparents",
             },
+            xaxis: {
+              categories: data?.map(a=> [new Date(a.time_open *1000).getDate()]),
+              labels: {
+                style: {
+                  colors: "gray"
+                }
+              },
+            },
             dataLabels: {
                 enabled: false
               },
@@ -63,7 +71,7 @@ function Chart () {
                   },
                   axisBorder: {
                     show: true,
-                    color: "white"
+                    color: "gray"
                   },
                   labels: {
                     style: {

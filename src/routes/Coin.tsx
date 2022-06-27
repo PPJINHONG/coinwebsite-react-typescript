@@ -1,4 +1,4 @@
-import {useMatch ,useParams ,useLocation, Routes , Route} from "react-router";
+import {useMatch ,useParams ,useLocation} from "react-router";
 import { useEffect, useState  } from "react";
 import styled from "styled-components";
 import Chart from "./Chart";
